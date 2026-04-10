@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@iobroker/adapter-core": "^3.3.2",
-    "aedes": "^1.0.1",
+    "aedes": "^1.0.2",
     "aedes-server-factory": "^0.2.1",
     "iobroker-jsonexplorer": "^0.2.2",
     "portscanner": "^2.2.0"
