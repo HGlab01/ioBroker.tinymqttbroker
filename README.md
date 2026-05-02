@@ -88,6 +88,9 @@ onStop(function (callback) {
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
+- (copilot) Adapter requires node.js >= 22 now
+
+### **WORK IN PROGRESS**
 * (HGlab01) Bump aedes to 1.0.2
 * 
 ### 0.1.6 (2026-03-19)
