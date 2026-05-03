@@ -136,6 +136,8 @@ onStop(function (callback) {
 ### 0.0.4(2023-06-30)
 * (HGlab01) first release
 
+[Older changelogs can be found there](CHANGELOG_OLD.md)
+
 ## License
 MIT License
 
