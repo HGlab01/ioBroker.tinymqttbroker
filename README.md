@@ -88,7 +88,8 @@ onStop(function (callback) {
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
-- (copilot) Adapter requires node.js >= 22 now
+* (copilot) Adapter requires node.js >= 22 now
+* (HGlab01) add logs for clientError, connectionError and keepaliveTimeout
 
 ### **WORK IN PROGRESS**
 * (HGlab01) Bump aedes to 1.0.2
