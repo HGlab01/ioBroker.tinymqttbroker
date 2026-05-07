@@ -115,6 +115,20 @@ class Tinymqttbroker extends utils.Adapter {
                     `MQTT-broker says: Client ${client ? client.id : client} unsubscribed from topic(s): ${subscriptions.join(',')} on broker ${this.aedes.id}`,
                 );
             });
+
+            this.aedes.on('clientError', (client: any, error: any) => {
+                this.log.warn(`MQTT-broker says: Client ${client ? client.id : client} error: ${error.message}`);
+            });
+
+            this.aedes.on('connectionError', (client: any, error: any) => {
+                this.log.warn(
+                    `Server forced disconnect for client ${client ? client.id : 'unknown'} due to error: ${error.message}`,
+                );
+            });
+
+            this.aedes.on('keepaliveTimeout', (client: any) => {
+                this.log.warn(`Server is kicking out client ${client.id} due to keep-alive timeout.`);
+            });
         } catch (error) {
             this.log.error(`${String(error)}`);
             console.error(`${String(error)}`);
