@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "tinymqttbroker",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "news": {
+      "0.1.7": {
+        "en": "Adapter requires node.js >= 22 now\nadd logs for clientError, connectionError and keepaliveTimeout\nBump aedes to 1.0.2\ncode quality improvements\ndependecy updates",
+        "de": "Adapter benötigt node.js >= 22 jetzt\nlogs für clientError, connectionError und keepaliveTimeout hinzufügen\nBump aedes bis 1,0,2\nverbesserung der codequalität\ndependecy updates",
+        "ru": "Адаптер требует node.js >= 22 сейчас\nдобавить журналы для ClientError, ConnectionError и KeepaliveTimeout\nНакачиваем 1.0.2\nулучшение качества кода\nобновления dependecy",
+        "pt": "Adaptador requer nod.js >= 22 agora\nadicionar logs para o clienteError, conexãoErro e Tempo de manutenção\nBump aedes até 1.0.2\nmelhorias na qualidade do código\natualizações de dependência",
+        "nl": "Voor de adapter zijn node.js < 22 nu nodig\nlogs toevoegen voor clientError, connectieError en keepaliveTimeout\nBump aedes naar 1.0.2\nverbetering van de codekwaliteit\nafhankelijkheidsupdates",
+        "fr": "Adaptateur nécessite node.js >= 22 maintenant\najouter des journaux pour clientErreur, connexionErreur et gardeTimeout\nAedes à boulettes à 1,0.2\namélioration de la qualité du code\nmises à jour de la dépendance",
+        "it": "Adattatore richiede node.js >= 22 ora\naggiungere i log per clientError, connessioneError e keepaliveTimeout\nBump aedes a 1.0.2\nmiglioramento della qualità del codice\naggiornamenti di dipendenza",
+        "es": "Adaptador requiere node.js ю= 22 ahora\nañadir registros para clienteError, conexiónError y keepaliveTimeout\nAedes de bomba a 1.0.2\nmejoras de calidad de código\nactualizaciones de dependencia",
+        "pl": "Adapter wymaga node.js > = 22\ndodaj dzienniki dla klientError, connectionError i keepaliveTimeout\nBump aedes do 1.0.2\npoprawa jakości kodu\naktualizacje zależności",
+        "uk": "Адаптер вимагає node.js >= 22 тепер\nдодати журнали для клієнтаОренда, підключенняОренда та збереження часу\nBump aedes до 1.0.2\nпокращення якості коду\nоновлення залежності",
+        "zh-cn": "适配器需要节点.js 现在22\n添加客户端错误、 连接错误和保存时间的日志\n弹簧至1.0.2\n代码质量改进\n依赖性更新"
+      },
       "0.1.6": {
         "en": "Bump aedes to 1.0.1\nRename config items",
         "de": "Bump aeds zu 1.0.1\nUmname config Items",
@@ -80,19 +93,6 @@
         "pl": "Aktualizuj liby\nc) 2026 r\nBump aedes do 1.0.0",
         "uk": "Оновлення ліжок\n(р) 2026\nНакопичувачі до 1.0.0",
         "zh-cn": "更新 libs\n(c) 2026年\n弹簧为 1.0.0"
-      },
-      "0.1.5-alpha.0": {
-        "en": "Update libs\n(c) 2026\nBump aedes to v1.0.0",
-        "de": "Update libs\nc) 2026\nBump aedes to v1.0.0",
-        "ru": "Обновление libs\nc) 2026 год\nНакачиваем пузыри до v1.0.0",
-        "pt": "Atualizar libs\nc) 2026\nBump aedes to v1.0.0",
-        "nl": "Libs bijwerken\nc) 2026\nBump aedes naar v1.0.0",
-        "fr": "Mettre à jour les libs\nc) 2026\nBump aedes à v1.0.0",
-        "it": "Aggiorna libs\ne) 2026\nAede di bump a v1.0.0",
-        "es": "Actualizar libs\nc) 2026\nBump aedes to v1.0.0",
-        "pl": "Aktualizuj liby\nc) 2026 r\nBump aedes to v1.0.0",
-        "uk": "Оновлення ліжок\n(р) 2026\nBump aedes до v1.0.0",
-        "zh-cn": "更新 libs\n(c) 2026年\n弹出头到v1.0.0"
       }
     },
     "titleLang": {
