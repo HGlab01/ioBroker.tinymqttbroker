@@ -1,0 +1,6 @@
+{
+    "common.desc": "这是一个非常小的 MQTT 代理，它不管理 iobroker 中的任何对象/状态，但提供一个中央 MQTT 代理实例来作为 MQTT 客户端发布订阅主题。让多个设备与一个代理通信并使用 MQTT 客户端 JavaScript 在 iobroker 上进行交互非常有帮助。",
+    "common.titleLang": "小型 MQTT 代理",
+    "serverPort": "选项1",
+    "tinymqttbroker adapter settings": "tinymqttbroker的适配器设置"
+}

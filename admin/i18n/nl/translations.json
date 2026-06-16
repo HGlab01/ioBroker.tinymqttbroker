@@ -1,6 +1,0 @@
-{
-	"common.desc": "Dit is een zeer kleine MQTT-makelaar die geen objecten/statussen in iobroker beheert, maar een centrale MQTT-makelaar-instantie biedt om onderwerpen voor abonneren als MQTT-client te publiceren. Zeer handig om meerdere apparaten met één makelaar te laten praten en te laten communiceren op iobroker met een MQTT-client javascript.",
-	"common.titleLang": "Kleine MQTT-makelaar",
-	"serverPort": "MQTT Port",
-	"tinymqttbroker adapter settings": "Adapterinstellingen voor tinymqttbroker"
-}

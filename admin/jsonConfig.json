@@ -4,7 +4,7 @@
 	"items": {
 		"serverPort": {
 			"type": "number",
-			"label": "MQTT Port",
+			"label": "serverPort",
 			"min": 1880,
 			"newLine": true,
 			"xs": 12,

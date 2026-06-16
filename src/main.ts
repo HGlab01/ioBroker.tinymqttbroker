@@ -64,7 +64,7 @@ class Tinymqttbroker extends utils.Adapter {
 
         if (resultPortScanner == 'open') {
             this.log.error(`Port ${serverPort} is already in use. Please configure another port in adapter settings!`);
-            const end = this.terminate ? this.terminate(utils.EXIT_CODES.INVALID_CONFIG_OBJECT) : process.exit(0);
+            const end = this.terminate(utils.EXIT_CODES.INVALID_CONFIG_OBJECT);
             return end;
         }
 
@@ -77,13 +77,11 @@ class Tinymqttbroker extends utils.Adapter {
             this.server.on('error', (error: any) => {
                 if (error?.code === 'EADDRINUSE') {
                     this.log.error(`Port ${serverPort} is already in use. Cannot start MQTT broker.`);
-                    const end = this.terminate
-                        ? this.terminate(utils.EXIT_CODES.INVALID_CONFIG_OBJECT)
-                        : process.exit(0);
+                    const end = this.terminate(utils.EXIT_CODES.INVALID_CONFIG_OBJECT);
                     return end;
                 }
                 this.log.error(`An error occurred while starting the MQTT broker ${error}`);
-                const end = this.terminate ? this.terminate(utils.EXIT_CODES.INVALID_CONFIG_OBJECT) : process.exit(0);
+                const end = this.terminate(utils.EXIT_CODES.INVALID_CONFIG_OBJECT);
                 return end;
             });
 
@@ -132,7 +130,7 @@ class Tinymqttbroker extends utils.Adapter {
         } catch (error) {
             this.log.error(`${String(error)}`);
             console.error(`${String(error)}`);
-            const end = this.terminate ? this.terminate(utils.EXIT_CODES.INVALID_CONFIG_OBJECT) : process.exit(0);
+            const end = this.terminate(utils.EXIT_CODES.INVALID_CONFIG_OBJECT);
             return end;
         }
     }
