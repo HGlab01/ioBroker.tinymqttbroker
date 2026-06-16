@@ -1,0 +1,6 @@
+{
+    "common.desc": "Questo è un broker MQTT molto piccolo che non gestisce alcun oggetto/stato in iobroker ma offre un'istanza del broker MQTT centrale per pubblicare argomenti di sottoscrizione come client MQTT. Molto utile per consentire a più dispositivi di parlare con un broker e interagire su iobroker con un javascript client MQTT.",
+    "common.titleLang": "Piccolo broker MQTT",
+    "serverPort": "MQTT Port",
+    "tinymqttbroker adapter settings": "Impostazioni dell'adattatore per tinymqttbroker"
+}

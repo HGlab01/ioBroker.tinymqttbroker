@@ -1,6 +1,0 @@
-{
-	"tinymqttbroker adapter settings": "Adapter settings for tinymqttbroker",
-	"serverPort": "MQTT Port",
-	"common.titleLang": "Tiny MQTT Broker",
-	"common.desc":"This is very tiny MQTT broker which is not managing any objects/states in iobroker but offers a central MQTT broker instance to publish an subscribe topics as MQTT client. Very helpful to let several devices to talk with one broker and interact on iobroker with a MQTT client javascript."
-}

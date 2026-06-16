@@ -27,6 +27,8 @@ var import_portscanner = __toESM(require("portscanner"));
 const jsonExplorer = require("iobroker-jsonexplorer");
 const { version } = require("../package.json");
 class Tinymqttbroker extends utils.Adapter {
+  aedes;
+  server;
   constructor(options = {}) {
     super({
       ...options,
@@ -67,7 +69,7 @@ class Tinymqttbroker extends utils.Adapter {
     const resultPortScanner = await import_portscanner.default.checkPortStatus(serverPort);
     if (resultPortScanner == "open") {
       this.log.error(`Port ${serverPort} is already in use. Please configure another port in adapter settings!`);
-      const end = this.terminate ? this.terminate(utils.EXIT_CODES.INVALID_CONFIG_OBJECT) : process.exit(0);
+      const end = this.terminate(utils.EXIT_CODES.INVALID_CONFIG_OBJECT);
       return end;
     }
     try {
@@ -78,11 +80,11 @@ class Tinymqttbroker extends utils.Adapter {
       this.server.on("error", (error) => {
         if ((error == null ? void 0 : error.code) === "EADDRINUSE") {
           this.log.error(`Port ${serverPort} is already in use. Cannot start MQTT broker.`);
-          const end2 = this.terminate ? this.terminate(utils.EXIT_CODES.INVALID_CONFIG_OBJECT) : process.exit(0);
+          const end2 = this.terminate(utils.EXIT_CODES.INVALID_CONFIG_OBJECT);
           return end2;
         }
         this.log.error(`An error occurred while starting the MQTT broker ${error}`);
-        const end = this.terminate ? this.terminate(utils.EXIT_CODES.INVALID_CONFIG_OBJECT) : process.exit(0);
+        const end = this.terminate(utils.EXIT_CODES.INVALID_CONFIG_OBJECT);
         return end;
       });
       this.server.listen(serverPort, () => {
@@ -122,7 +124,7 @@ class Tinymqttbroker extends utils.Adapter {
     } catch (error) {
       this.log.error(`${String(error)}`);
       console.error(`${String(error)}`);
-      const end = this.terminate ? this.terminate(utils.EXIT_CODES.INVALID_CONFIG_OBJECT) : process.exit(0);
+      const end = this.terminate(utils.EXIT_CODES.INVALID_CONFIG_OBJECT);
       return end;
     }
   }

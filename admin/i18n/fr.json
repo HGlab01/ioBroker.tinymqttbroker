@@ -1,0 +1,6 @@
+{
+    "common.desc": "Il s'agit d'un très petit courtier MQTT qui ne gère aucun objet/état dans iobroker mais offre une instance centrale de courtier MQTT pour publier un sujet d'abonnement en tant que client MQTT. Très utile pour laisser plusieurs appareils parler avec un courtier et interagir sur iobroker avec un client javascript MQTT.",
+    "common.titleLang": "Petit courtier MQTT",
+    "serverPort": "MQTT Port",
+    "tinymqttbroker adapter settings": "Paramètres d'adaptateur pour tinymqttbroker"
+}

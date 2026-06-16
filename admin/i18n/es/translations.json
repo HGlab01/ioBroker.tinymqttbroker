@@ -1,6 +1,0 @@
-{
-	"common.desc": "Este es un intermediario MQTT muy pequeño que no administra ningún objeto/estado en iobroker pero ofrece una instancia de intermediario MQTT central para publicar temas de suscripción como cliente MQTT. Muy útil para permitir que varios dispositivos hablen con un corredor e interactúen en iobroker con un javascript de cliente MQTT.",
-	"common.titleLang": "Pequeño bróker MQTT",
-	"serverPort": "MQTT Port",
-	"tinymqttbroker adapter settings": "Ajustes del adaptador para tinymqttbroker"
-}
