@@ -22,7 +22,7 @@
     "node": ">= 22.0.0"
   },
   "dependencies": {
-    "@iobroker/adapter-core": "^3.3.2",
+    "@iobroker/adapter-core": "^3.4.1",
     "aedes": "^1.0.2",
     "aedes-server-factory": "^0.2.1",
     "iobroker-jsonexplorer": "^0.2.2",
